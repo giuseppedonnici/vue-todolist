@@ -17,6 +17,12 @@ const {createApp} = Vue;
 createApp({
     data() {
         return {
+            newTodo: 
+                {
+                    text: '',
+                    done: false
+                },
+
             todos: [
                 {
                     text: "Allenarsi",
@@ -42,7 +48,15 @@ createApp({
     },
 
     methods: {
-        
-            
+        addTodo() {
+            if(this.newTodo.text.length > 0) {
+                this.todos.unshift(this.newTodo);
+                this.newTodo = {
+                    text: '',
+                    done: false
+                }
+
+            }
+        }
     }
 }).mount('#app')
