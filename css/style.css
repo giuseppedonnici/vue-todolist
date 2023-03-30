@@ -7,6 +7,10 @@
 
 body {
     font-family: sans-serif;
+    background-image: url(https://blog.logrocket.com/wp-content/uploads/2021/09/ultimate-guide-SVGs-vue-js.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 /* HEADER */
@@ -33,6 +37,7 @@ main {
 
 h1 {
     text-align: center;
+    color: lightcoral;
 }
 
 .new-todo {
@@ -62,7 +67,9 @@ input {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid black;
+    color: rgb(235, 173, 5);
+    font-weight: bold;
+    border-bottom: 1px solid rgb(137, 206, 27);
 }
 
 .empty-list {
@@ -72,4 +79,5 @@ input {
 
 .done {
     text-decoration: line-through;
+    color: red;
 }
