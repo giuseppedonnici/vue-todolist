@@ -28,7 +28,7 @@
               </div>
     
               <ul class="todo-list">
-                <li v-for="(todo, index) in todos">
+                <li v-for="(todo, index) in todos" @click="toggleDone(index)">
                   <p :class="{'done' : todo.done === true}">{{ todo.text }}</p>
                 </li>
               </ul>
